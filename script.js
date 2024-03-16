@@ -58,7 +58,7 @@ opBtns.forEach((btn) => {
 
         nextNum = "";
         equalPressed = false;
-        if (prevNum % 1 != 0) prevNum = Math.round(prevNum * 10 ** 11) / 10 ** 11;
+        if (prevNum % 1 != 0) prevNum = Math.round(prevNum * 10 ** 7) / 10 ** 7;
         display.innerHTML = prevNum;
 
         operator = btn.name == "add" ? addNum
@@ -84,7 +84,7 @@ equalBtn.addEventListener("click", () => {
         prevNum = operate(operator, +prevNum, +nextNum);
     }
     equalPressed = true;
-    if (prevNum % 1 != 0) prevNum = Math.round(prevNum * 10 ** 11) / 10 ** 11;
+    if (prevNum % 1 != 0) prevNum = Math.round(prevNum * 10 ** 7) / 10 ** 7;
     display.innerHTML = prevNum;
 });
 
@@ -131,7 +131,7 @@ document.addEventListener("keydown", (event) => {
 
         nextNum = "";
         equalPressed = false;
-        if (prevNum % 1 != 0) prevNum = Math.round(prevNum * 10 ** 11) / 10 ** 11;
+        if (prevNum % 1 != 0) prevNum = Math.round(prevNum * 10 ** 7) / 10 ** 7;
         display.innerHTML = prevNum;
 
         operator = keyName == "+" ? addNum

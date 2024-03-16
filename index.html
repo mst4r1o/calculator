@@ -3,29 +3,51 @@
     <head>
         <meta charset="utf-8">
         <title>Calculator</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
-        <div>
+        <div class="calculator">
             <div class="display">0</div>
-            <button type="button" name="1" class="number">1</button>
-            <button type="button" name="2" class="number">2</button>
-            <button type="button" name="3" class="number">3</button>
-            <button type="button" name="4" class="number">4</button>
-            <button type="button" name="5" class="number">5</button>
-            <button type="button" name="6" class="number">6</button>
-            <button type="button" name="7" class="number">7</button>
-            <button type="button" name="8" class="number">8</button>
-            <button type="button" name="9" class="number">9</button>
-            <button type="button" name="0" class="number">0</button>
-            <button type="button" name="." class="number">.</button>
-            <button type="button" name="add" class="operator">+</button>
-            <button type="button" name="subtract" class="operator">-</button>
-            <button type="button" name="multiply" class="operator">*</button>
-            <button type="button" name="divide" class="operator">/</button>
-            <button type="button" name="equal" class="equal">=</button>
-            <button type="button" name="backspace" class="backspace">Back</button>
-            <button type="button" name="clear" class="clear">Clear</button>
+            <div class="row">
+                <button type="button" name="clear" class="clear">AC</button>
+                <button type="button" name="backspace" class="backspace">CE</button>
+                <button type="button" name="divide" class="operator">/</button>
+                <button type="button" name="multiply" class="operator">*</button>
+            </div>
+            <div class="row">
+                <button type="button" name="7" class="number">7</button>
+                <button type="button" name="8" class="number">8</button>
+                <button type="button" name="9" class="number">9</button>
+                <button type="button" name="add" class="operator">+</button>
+
+            </div>
+            <div class="row">
+                <button type="button" name="4" class="number">4</button>
+                <button type="button" name="5" class="number">5</button>
+                <button type="button" name="6" class="number">6</button>
+                <button type="button" name="subtract" class="operator">-</button>
+            </div>
+            <div class="container">
+                <div class="row-container">
+                    <div class="row">
+                        <button type="button" name="1" class="number">1</button>
+                        <button type="button" name="2" class="number">2</button>
+                        <button type="button" name="3" class="number">3</button>
+                    </div>
+                    <div class="row">
+                        <button type="button" name="0" class="number zero">0</button>
+                        <button type="button" name="." class="number dot">.</button>
+                    </div>
+                </div>
+                <button type="button" name="equal" class="equal">=</button>
+            </div>
+            
+            
+            
+            
+            
+            
         </div>
         <script src="script.js"></script>
     </body>

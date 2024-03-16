@@ -1,0 +1,90 @@
+body {
+    font-size: 28px;
+}
+
+.calculator {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    height: 60vh;
+    width: 40vh;
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    flex-direction: column;
+    border-radius: 1%;
+
+}
+
+.display {
+    height: 100px;
+    margin: 8px 8px 5px 8px;
+    justify-content: end;
+    background-color: lightgray;
+    padding: 5px;
+    font-size: 80px;
+    display: flex;
+}
+
+button {
+    font-size: 28px;
+    flex: 1 1 auto;
+    border-radius: 6%;
+    border: 1px solid black;
+    width: 50px;
+    margin: 1px;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    padding-left: 8px;
+    padding-right: 8px;
+    /* height: 90px; */
+    flex: 1 1 auto;
+}
+
+.row-container .row {
+    padding: 0;
+}
+
+.container  {
+    display: flex;
+    flex: 2 1 auto;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 5px;
+}
+
+.row-container {
+    flex: 3 1 auto;
+    display: flex;
+    flex-direction: column  ;
+}
+
+button.zero {
+    flex: 3.4 1 auto;
+}
+
+button.dot {
+    flex: 1 1 auto;
+}
+
+.number {
+    background-color: lightgray;
+}
+
+.clear, .backspace {
+    background-color: rgb(196, 70, 70)
+}
+
+.equal {
+    background-color: rgb(56, 201, 37);
+}
+
+.operator {
+    background-color: rgb(218, 153, 33);
+}
